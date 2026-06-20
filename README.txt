@@ -1,61 +1,128 @@
-# Customer Churn Prediction
+# Customer Churn Prediction Using Decision Tree
 
-## Project Overview
+## Overview
 
-This project predicts whether a telecom customer is likely to churn (leave the company) or stay using Machine Learning. A Decision Tree Classifier is trained on customer data to analyze patterns and identify customers at risk of leaving.
+This project predicts whether a telecom customer is likely to churn (leave the company) or stay based on customer account and billing information. A Decision Tree Classifier is used to analyze customer behavior and make predictions.
+
+---
 
 ## Objective
 
-The goal of this project is to help telecom companies improve customer retention by predicting churn behavior based on customer account information and billing details.
+The objective of this project is to identify customers who are at risk of leaving the telecom service, helping businesses improve customer retention and reduce churn.
+
+---
 
 ## Dataset
 
-Telco Customer Churn Dataset (Kaggle)
+Dataset: Telco Customer Churn Dataset
+
+Source: Kaggle
+
+---
 
 ## Features Used
 
-* Tenure
-* Contract Type
-* Monthly Charges
-* Total Charges
+- Tenure
+- Contract Type
+- Monthly Charges
+- Total Charges
+
+---
 
 ## Target Variable
 
-* Churn (Yes/No)
+- Churn
+  - 0 = Customer Will Stay
+  - 1 = Customer Will Churn
+
+---
 
 ## Technologies Used
 
-* Python
-* Pandas
-* Scikit-Learn
-* Decision Tree Classifier
+- Python
+- Pandas
+- Scikit-Learn
+- Matplotlib
+
+---
 
 ## Project Workflow
 
-1. Load and clean the dataset
-2. Handle missing values
-3. Convert categorical data into numerical format
-4. Select important features
-5. Split data into training and testing sets
-6. Train the Decision Tree model
-7. Evaluate model performance using accuracy
-8. Predict churn for new customers
+1. Load Dataset
+2. Data Cleaning and Preprocessing
+3. Handle Missing Values
+4. Encode Categorical Variables
+5. Feature Selection
+6. Train-Test Split
+7. Train Decision Tree Classifier
+8. Predict Customer Churn
+9. Evaluate Model Performance
+10. Visualize ROC Curve
 
-## Results
+---
 
-The model successfully predicts whether a customer is likely to churn based on their service and billing information.
+## Model Evaluation
 
-## Future Enhancements
+The model performance is evaluated using:
 
-* Random Forest Classifier
-* Streamlit Web Application
-* Feature Importance Visualization
-* Customer Risk Dashboard
+- Accuracy Score
+- ROC Curve
+- AUC Score
+
+---
+
+## Sample Output
+
+```text
+========== CUSTOMER CHURN PREDICTION ==========
+
+Accuracy Score : 72.60%
+AUC Score      : 0.66
+
+Customer Information
+
+   tenure  Contract  MonthlyCharges  TotalCharges
+0      34         1           56.95        1889.5
+
+Stay Probability : 100.00%
+Churn Probability: 0.00%
+
+Prediction: Customer Will Stay
+
+==============================================
+```
+
+---
+
+## ROC Curve
+
+The ROC Curve is used to visualize the model's ability to distinguish between customers who will churn and those who will stay.
+
+---
 
 ## Learning Outcomes
 
-* Data Preprocessing
-* Feature Engineering
-* Classification Models
-* Model Evaluation
-* Customer Churn Analysis
+- Data Preprocessing
+- Feature Engineering
+- Classification using Decision Tree
+- Model Evaluation
+- ROC Curve Analysis
+- Customer Churn Prediction
+
+---
+
+## Future Improvements
+
+- Random Forest Classifier
+- XGBoost Classifier
+- Streamlit Web Application
+- Interactive Dashboard
+- Real-Time Customer Prediction System
+
+---
+
+## Author
+
+Suprajaa Sankari G
+
+Information Technology Student | Aspiring Data Scientist
